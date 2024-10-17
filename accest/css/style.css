@@ -22,37 +22,47 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    min-width: 118px;
+    display: inline-block;
+    background: #171100;
+    border-radius: 24.5px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 10px 41px;
+    line-height: 1.75;
+}
+
 /* ================================================Header============================================  */
 /* ------------------Nav-bar----------------------  */
 header {
     background: #fffcf4;
-    height: 100vh;
-}
-header .nav-bar {
-    display: flex;
-    padding-top: 44px;
+    position: sticky;
+    top: -28px;
 }
 
-header .icon {
-    color: #171100;
-    font-family: Sen;
-    font-size: 2.4rem;
-    font-weight: 700;
+header .content {
+    padding: 36px 0 8px;
 }
-header .icon::after {
-    content: ".";
-    color: #ffb900;
-    font-family: Sen;
-    font-size: 2.4rem;
-    font-weight: 700;
+
+header .nav-bar {
+    display: flex;
+    align-items: center;
 }
 
 header .menu {
-    margin-left: 512px;
+    margin-left: 491px;
 }
 
 header .menu li {
     display: inline-block;
+}
+
+header .menu li a:hover {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
 }
 
 header .menu li a {
@@ -84,18 +94,9 @@ header .menu li:first-child a::before {
     bottom: 0;
 }
 
-.btn {
+header .nav-bar .btn {
     margin-left: auto;
-    min-width: 144px;
-    height: 49px;
-    display: inline-block;
-    background: #171100;
-    border-radius: 24.5px;
-    text-align: center;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.75;
-    padding: 10px 41px;
-    transform: translateY(-10px);
+}
+header .nav-bar .btn:hover {
+    background: gray;
 }
