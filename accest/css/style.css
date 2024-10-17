@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================================================Header============================================  */
+/* ------------------Nav-bar----------------------  */
+header {
+    background: #fffcf4;
+    height: 100vh;
+}
+header .nav-bar {
+    display: flex;
+    padding-top: 44px;
+}
+
+header .icon {
+    color: #171100;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+header .icon::after {
+    content: ".";
+    color: #ffb900;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+header .menu {
+    margin-left: 512px;
+}
+
+header .menu li {
+    display: inline-block;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #5f5b53;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding: 0 21px;
+    position: relative;
+}
+
+header .menu li:first-child a {
+    color: #171100;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+header .menu li:first-child a::before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn {
+    margin-left: auto;
+    min-width: 144px;
+    height: 49px;
+    display: inline-block;
+    background: #171100;
+    border-radius: 24.5px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    padding: 10px 41px;
+    transform: translateY(-10px);
+}
